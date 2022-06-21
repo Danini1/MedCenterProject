@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    tools:context=".buscar_ubs">
+
+
+
+
+    <View
+        android:id="@+id/canvas"
+        android:layout_width="408dp"
+        android:layout_height="741dp"
+        android:background="#9B8AB3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/pesquisar"
+        android:layout_width="233dp"
+        android:layout_height="50sp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nossa Senhora das Graças"
+        app:layout_constraintStart_toEndOf="@+id/search"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ubs_search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_marginTop="30dp"
+        android:text="Pesquisar"
+        android:textSize="15sp"
+        android:typeface="monospace"
+        app:layout_constraintStart_toEndOf="@+id/pesquisar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:text="Resultado da sua Pesquisa:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pesquisar" />
+
+
+    <ImageView
+        android:id="@+id/montenegro"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ubs_nss"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:text="Dr. Luiz Montenegro"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultado" />
+
+    <TextView
+        android:id="@+id/bairro_montenegro"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:text="Endereço: Av. Rio Jutaí, 37 - Nossa Sra. das Graças, Manaus - AM, 69053-020"
+        android:textColor="#F9FBE7"
+        app:layout_constraintStart_toEndOf="@+id/montenegro"
+        app:layout_constraintTop_toBottomOf="@+id/nome" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:textColor="#F9FBE7"
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Horario de Funcionamento: Segunda a Sabado - 6h às 17h "
+        app:layout_constraintStart_toEndOf="@+id/montenegro"
+        app:layout_constraintTop_toBottomOf="@+id/bairro_montenegro" />
+
+    <Button
+        android:id="@+id/l_montenegro"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:onClick="Montenegro"
+        android:text="Localização"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/montenegro" />
+
+    <ImageView
+        android:id="@+id/José"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ubs_constantino"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome2"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/nome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:text="José Rayol dos Santos"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l_montenegro" />
+
+    <TextView
+        android:id="@+id/bairro2"
+        android:layout_width="300dp"
+        android:textColor="#F9FBE7"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:text="Endereço: Av. Constantino Nery, s/n - Flores, Manaus - AM, 69050-001"
+        app:layout_constraintStart_toEndOf="@+id/José"
+        app:layout_constraintTop_toBottomOf="@+id/nome2" />
+
+    <TextView
+        android:id="@+id/funcionamento2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="#F9FBE7"
+
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="Horario de Funcionamento: Segunda a Sabado - 8h às 20h:30m "
+        app:layout_constraintStart_toEndOf="@+id/José"
+        app:layout_constraintTop_toBottomOf="@+id/bairro2" />
+
+    <Button
+        android:id="@+id/l_jose"
+        android:onClick="Jose"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Localização"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/José" />
+</androidx.constraintlayout.widget.ConstraintLayout>

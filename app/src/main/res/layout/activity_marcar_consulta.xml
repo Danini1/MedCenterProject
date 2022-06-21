@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MarcarConsulta">
+
+    <View
+        android:id="@+id/fundo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:background="#75c7fb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardView"
+
+        android:layout_width="280dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        card_view:cardCornerRadius="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            tools:context=".Login">
+
+            <EditText
+                android:id="@+id/NOME"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:fontFamily="@font/caveat_bold"
+                android:hint="Digite seu Nome"
+                android:inputType="textPersonName"
+                android:textColor="#314489"
+                android:textColorHint="#314489"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/ESPECIALIDADE"
+
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:fontFamily="@font/caveat_bold"
+                android:hint="Especialidade"
+                android:inputType="textPersonName"
+                android:textColor="#314489"
+                android:textColorHint="#314489"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/NOME" />
+
+            <EditText
+                android:id="@+id/MEDICO"
+
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:fontFamily="@font/caveat_bold"
+                android:hint="Medico"
+                android:inputType="textPersonName"
+                android:textColor="#314489"
+                android:textColorHint="#314489"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ESPECIALIDADE" />
+
+            <EditText
+                android:id="@+id/LOCAL"
+
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:fontFamily="@font/caveat_bold"
+                android:hint="Local"
+                android:inputType="textPersonName"
+                android:textColor="#314489"
+                android:textColorHint="#314489"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MEDICO" />
+
+            <EditText
+                android:id="@+id/DATA"
+
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:fontFamily="@font/caveat_bold"
+                android:hint="Data"
+                android:inputType="datetime"
+                android:textColor="#314489"
+                android:textColorHint="#314489"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LOCAL" />
+
+            <EditText
+                android:id="@+id/HORA"
+
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:fontFamily="@font/caveat_bold"
+                android:hint="Hora"
+                android:inputType="textPersonName"
+                android:textColor="#314489"
+                android:textColorHint="#314489"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/DATA" />
+
+            <Button
+                android:id="@+id/BTNhora"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Hora"
+                app:layout_constraintStart_toEndOf="@+id/HORA"
+                app:layout_constraintTop_toBottomOf="@+id/BTNdata" />
+
+            <Button
+                android:id="@+id/BTNdata"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Data"
+                app:layout_constraintStart_toEndOf="@+id/DATA"
+                app:layout_constraintTop_toBottomOf="@+id/LOCAL" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/marcar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/botaodevoltar"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+    <Button
+        android:id="@+id/btnMarcarConsulta"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/rectangle11"
+        android:fontFamily="@font/caveat_bold"
+        android:text="Marcar Consulta"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.861" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

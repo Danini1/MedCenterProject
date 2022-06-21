@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#75c7fb"
+
+    tools:context=".Cadastro">
+
+  <androidx.cardview.widget.CardView
+
+      android:id="@+id/cardView2"
+      android:layout_width="276dp"
+      android:layout_height="535dp"
+      android:layout_marginTop="12dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.496"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      card_view:cardCornerRadius="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        tools:context=".Cadastro">
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/FotoPerfil"
+          android:layout_width="127dp"
+          android:layout_height="98dp"
+          android:layout_below="@+id/textView4"
+          android:layout_alignParentStart="true"
+          android:layout_marginTop="16dp"
+          android:src="@drawable/ic_baseline_add_photo_alternate_24"
+          app:civ_border_color="@color/colorAccent"
+          app:civ_border_width="2dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.48"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          tools:ignore="UnknownId" />
+
+      <EditText
+          android:id="@+id/NOME"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:layout_marginTop="36dp"
+          android:ems="10"
+
+          android:hint="Nome"
+          android:inputType="textPersonName"
+          android:textColor="#314489"
+          android:textColorHint="#314489"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/addFot" />
+
+      <EditText
+          android:id="@+id/SENHA"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:layout_marginTop="8dp"
+          android:ems="10"
+
+          android:hint="Senha"
+          android:inputType="textPassword"
+          android:textColor="#314489"
+          android:textColorHint="#314489"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/EMAIL" />
+
+      <EditText
+          android:id="@+id/CPF"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:ems="10"
+
+          android:hint="CPF"
+          android:inputType="number"
+          android:textColor="#314489"
+          android:textColorHint="#314489"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/NOME" />
+
+      <EditText
+          android:id="@+id/DTNS"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:layout_marginTop="5dp"
+          android:ems="10"
+
+          android:hint="Data de nascimento"
+          android:inputType="date"
+          android:textColor="#314489"
+          android:textColorHint="#314489"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.968"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/CPF" />
+
+      <EditText
+          android:id="@+id/EMAIL"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:layout_marginTop="5dp"
+          android:ems="10"
+
+          android:hint="Email"
+          android:inputType="textPersonName|date"
+          android:textColor="#314489"
+          android:textColorHint="#314489"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/DTNS" />
+
+
+      <View
+          android:id="@+id/fundo"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:background="@drawable/fundocadastro"
+
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent" />
+
+
+      <Button
+          android:id="@+id/addFot"
+          android:layout_width="130dp"
+          android:layout_height="30dp"
+          android:layout_marginTop="4dp"
+          android:background="@color/colorAccent"
+          android:text="Adicionar Foto"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.493"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/FotoPerfil" />
+
+      <Button
+          android:id="@+id/CADASTRAR"
+          android:layout_width="130dp"
+          android:layout_height="30dp"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginBottom="16dp"
+          android:background="@drawable/rectangle11"
+          android:fontFamily="@font/caveat_bold"
+          android:text="SALVAR"
+          android:textColor="#FFFFFF"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </androidx.cardview.widget.CardView>
+
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/faddcadastro"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+
+      android:layout_marginEnd="288dp"
+
+      android:layout_marginBottom="25dp"
+      android:backgroundTint="@color/botaodevoltar"
+      android:clickable="true"
+      android:onClick="voltarteladeinicio"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+  <com.hbb20.CountryCodePicker
+      android:id="@+id/ccp"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:background="@color/white"
+      app:ccp_defaultNameCode="In"
+      app:layout_constraintBottom_toBottomOf="parent"
+
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/cardView2"
+      app:layout_goneMarginEnd="20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

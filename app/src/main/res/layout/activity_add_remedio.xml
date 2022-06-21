@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/addfoto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#75c7fb"
+    tools:context=".add_remedio">
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardView2"
+        android:layout_width="280dp"
+        android:layout_height="460dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        card_view:cardCornerRadius="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            tools:context=".Cadastro">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/addfotoo"
+                android:layout_width="127dp"
+                android:layout_height="98dp"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_baseline_add_photo_alternate_24"
+                app:civ_border_color="@color/colorAccent"
+                app:civ_border_width="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.48"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="UnknownId" />
+
+            <Button
+                android:id="@+id/addFot"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:background="@color/colorAccent"
+                android:text="Adicionar Foto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addfotoo" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/rectangle11"
+                android:fontFamily="@font/caveat_bold"
+                android:text="Adicionar Vacina"
+
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/addnome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="172dp"
+                android:ems="10"
+                android:hint="Nome"
+                android:inputType="textPersonName"
+                android:textColor="#314489"
+                android:textColorHint="#314489"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/addescricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Descrição"
+                android:inputType="textPersonName"
+                android:textColor="#314489"
+                android:textColorHint="#314489"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addnome" />
+
+            <EditText
+                android:id="@+id/addimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Foto"
+                android:inputType="textPersonName"
+                android:textColor="#314489"
+                android:textColorHint="#314489"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addqtd" />
+
+            <EditText
+                android:id="@+id/addqtd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:ems="10"
+                android:textColor="#314489"
+                android:textColorHint="#314489"
+                android:hint="Quantidade"
+                android:inputType="textPersonName"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/addescricao" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/faddaddremedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="288dp"
+
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/botaodevoltar"
+        android:clickable="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

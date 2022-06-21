@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/TextView"
+        android:text="Confirme Sua Senha para Editar o Perfil"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal = "true"
+        android:layout_centerVertical = "true"
+        android:layout_below = "@+id/TextView"
+        app:passwordToggleEnabled="true" >
+
+        <EditText
+            android:id="@+id/ConfirmarSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:textColor="#314489"
+            android:textColorHint="#314489" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/CONFIRMAR_SENHA"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rectangle11"
+        android:fontFamily="@font/caveat_bold"
+       android:layout_gravity="center_horizontal"
+        style = "@style/Widget.AppCompat.Button.Colored"
+        android:text="Confirmar"
+        android:layout_marginTop="15dp"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

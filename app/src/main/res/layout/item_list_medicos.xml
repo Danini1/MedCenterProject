@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true"
+    tools:context=".ItemMedico">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="396dp"
+        android:layout_height="255dp"
+        android:padding="15dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/FotO"
+            android:layout_width="75dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="48dp"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UnknownId" />
+
+        <TextView
+            android:id="@+id/Nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Especialidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Nome"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@+id/foto"
+            android:text="TextView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Hospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Especialidade"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@+id/foto"
+            android:text="TextView"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/BtnMarcarConsulta"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="150dp"
+
+
+            android:background="@drawable/rectangle11"
+            android:fontFamily="@font/caveat_bold"
+
+            android:text="Marcar Consulta"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/VideoCall"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_alignEnd="@+id/BtnMarcarConsulta"
+            android:layout_alignBottom="@+id/FotO"
+            android:layout_marginEnd="137dp"
+            android:layout_marginBottom="-58dp"
+            android:backgroundTint="@color/colorAccent"
+            android:drawableTop="@drawable/video_call" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
